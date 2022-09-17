@@ -1,6 +1,10 @@
 <?php
 
-include '../connection/config.php';
+  include("./connection/config.php");
 
-echo 'Running';
+  if($db) {
+    echo "Running";
+  } else {
+    echo "Failed";
+
 ?>
